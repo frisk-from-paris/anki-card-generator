@@ -10,3 +10,7 @@ def create_note(note: dict):
         return ToFillNote(**obj)
     elif note_type == "simple_translate":
         return SimpleTranslateNote(**obj)
+
+def create_notes(objs: list[dict]):
+    """ create multiple notes """
+    return [create_note(obj) for obj in objs]

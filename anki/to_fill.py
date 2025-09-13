@@ -30,27 +30,25 @@ class ToFillModel(genanki.Model):
             templates=[
                 {
                 'name': 'Cloze',
-                'qfmt': '{{Rule}}\n\n{{cloze:Text}}',
+                'qfmt': '{{Rule}}<br>{{cloze:Text}}<br>{{type:Text}}',
                 'afmt': '{{FrontSide}}<hr>{{Explanation}}',
                 },
-            ],
-            css='.card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n'
-                '.cloze {\n font-weight: bold;\n color: blue;\n}\n.nightMode .cloze {\n color: lightblue;\n}',
+            ]
         )
 
 
 class ToFillNote:
     rule: str = "Compléter les mots manquants"
-    explanation: str = "Explication: "
+    explanation: str = ""
     cloze_text: str = ""
 
     def __new__(cls, sentence: str, words_to_hide: list[str], explanation: str = ""):
         c_text = sentence
         for i, word in enumerate(words_to_hide, start=1):
-            c_text = c_text.replace(word, f"{{{{c{i}}}}}::{word}}}}}")
+            c_text = c_text.replace(word, f"{{{{c{i}::{word}}}}}")
 
         cls.cloze_text = c_text
-        cls.explanation += explanation
+        cls.explanation = "Explication: " + explanation
 
         return genanki.Note(
             model = ToFillModel(),

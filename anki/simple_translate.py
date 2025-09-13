@@ -26,8 +26,7 @@ class SimpleTranslateModel(genanki.Model):
                 'qfmt': '<p>{{Rule}}: </p><p>{{Sentence}}<br>{{type:Translation}}</p>',
                 'afmt': '<p>{{FrontSide}}</p><p><hr>{{Translation}}</p>',
                 },
-            ],
-            css='.card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n',
+            ]
         )
 
 
