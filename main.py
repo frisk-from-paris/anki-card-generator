@@ -23,7 +23,7 @@ to_fill_objs = lines_to_to_fill(to_fill_lines)
 to_fill_notes = create_notes(to_fill_objs)
 
 all_notes = []
-#all_notes.extend(simple_notes)
+all_notes.extend(simple_notes)
 all_notes.extend(to_fill_notes)
 
 export("persian", all_notes, "output")
