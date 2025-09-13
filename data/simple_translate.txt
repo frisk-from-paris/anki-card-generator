@@ -1,2 +1,117 @@
-man hastam,je suis
-to hasti,tu es
+# Conjugaison
+
+man hastam,je suis  
+to hasti,tu es  
+u hast,il/elle est  
+ma hastim,nous sommes  
+shoma hastid,vous êtes  
+anha hastand,ils/elles sont
+
+man daram,j'ai  
+to dari,tu as  
+u darad,il/elle a  
+ma darim,nous avons  
+shoma darid,vous avez  
+anha darand,ils/elles ont
+
+man mikham,je veux  
+to mikhai,tu veux  
+u mikhad,il/elle veut  
+ma mikhaim,nous voulons  
+shoma mikhaid,vous voulez  
+anha mikhand,ils/elles veulent
+
+# Phrases
+
+man khobam to chetori ?,je vais bien et toi ?  
+aya baradar dari ?,as-tu un frère ?  
+in che kasi ast ?,qui est cette personne ?  
+emruz koja i ?,où es-tu aujourd’hui ?  
+man dar sakhtemane shomareye hasht zendegi mikonam,je vis dans l’immeuble numéro huit  
+an dokhtar dar otaghe shomareye sizdah zendegi mikonad,cette fille vit dans la chambre numéro treize  
+ghad e man sado panjâ o hasht santimetr ast,ma taille est de cent cinquante-huit centimètres  
+ghad e an zan sado hastad santimetr ast,la taille de cette femme est de cent quatre-vingts centimètres  
+man madaram ra dust daram,j’aime ma mère  
+man dustan e madaram ra dust daram,j’aime les amis de ma mère  
+khale hayam man ra gheyli ghezavat mikonand,mes tantes me jugent beaucoup  
+man in kar e anha ra dust nadaram,je n’aime pas leur comportement  
+madaram az dast e man narahat mishavad,ma mère est fâchée contre moi  
+aya bastani mikha hi ?,veux-tu une glace ?  
+man zendegi mikonam,je vis  
+to zendegi mikoni,tu vis  
+u zendegi mikonad,il vit  
+ma zendegi mikonim,nous vivons  
+shoma zendegi mikonid,vous vivez  
+anha zendegi mikonand,ils vivent
+yek pesar e man daram,j’ai un frère  
+yek khahar e man daram,j’ai une sœur 
+in yek zan ast,c’est une femme  
+in yek mard ast,c’est un homme  
+man yek dust daram,j’ai un ami  
+man dustan e madaram ra dust daram,j’aime les amis de ma mère  
+in yek otagh ast,c’est une chambre  
+man dar yek sakhteman zendegi mikonam,je vis dans un immeuble  
+yek madar e man daram,j’ai une mère  
+yek pedar e man daram,j’ai un père  
+yek khale e man daram,j’ai une tante  
+yek amou e man daram,j’ai un oncle  
+in yek santimetr ast,c’est un centimètre  
+ghad e man sado panjâ o hasht santimetr ast,ma taille est de cent cinquante-huit centimètres  
+ghad e an zan sado hastad santimetr ast,sa taille est de cent quatre-vingts centimètres  
+in yek dahan ast,c’est une bouche  
+man yek dastan daram,j’ai une histoire  
+in yek vazn ast,c’est un poids  
+man bastani mikham,je veux une glace  
+an dokhtar dar otaghe shomareye sizdah ast,cette fille est dans la chambre numéro treize
+
+# Vocabulaire
+
+yek pesar,un frère  
+yek khahar,une sœur  
+yek baradar,un frère  
+yek madar,une mère  
+yek pedar,un père  
+yek khale,une tante  
+yek amou,un oncle  
+yek zan,une femme  
+yek mard,un homme  
+yek dust,un ami  
+dustan,des amis
+in dokhtar,cette fille  
+in mard,cet homme  
+in zan,cette femme  
+in dust,cet ami  
+yek otagh,une chambre  
+yek sakhteman,un immeuble  
+yek zendegi,une vie  
+yek santimetr,un centimètre  
+yek ghad,une taille  
+yek boland,grand/haut  
+yek dahan,une bouche  
+yek dast,une main  
+yek vazn,un poids  
+yek bastani,une glace  
+yek shomare,un numéro
+
+
+# Nombre
+
+yek,1  
+do,2  
+se,3  
+chahar,4  
+panj,5  
+shesh,6  
+haft,7  
+hasht,8  
+noh,9  
+dah,10  
+bist,20  
+si,30  
+chehel,40  
+panjah,50  
+shast,60  
+haftad,70  
+hashtad,80  
+navad,90  
+sad,100

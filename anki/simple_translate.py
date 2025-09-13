@@ -8,11 +8,11 @@ class SimpleTranslateModel(genanki.Model):
             'Basic (type in the answer)',
             fields=[
                 {
-                'name': 'Sentence',
+                'name': 'Rule',
                 'font': 'Arial',
                 },
                 {
-                'name': 'Rule',
+                'name': 'Sentence',
                 'font': 'Arial',
                 },
                 {
@@ -23,8 +23,8 @@ class SimpleTranslateModel(genanki.Model):
             templates=[
                 {
                 'name': 'To Persian',
-                'qfmt': '{{Rule}}\n\n{{Sentence}}',
-                'afmt': '{{FrontSide}}<hr>{{Translation}}',
+                'qfmt': '<p>{{Rule}}: </p><p>{{Sentence}}<br>{{type:Translation}}</p>',
+                'afmt': '<p>{{FrontSide}}</p><p><hr>{{Translation}}</p>',
                 },
             ],
             css='.card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n',
