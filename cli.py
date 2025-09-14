@@ -18,6 +18,11 @@ def add_arguments(parser: ArgumentParser):
     parser.add_argument(
         "--output", "-o", type=str, default="output", help="The path where to create the deck."
     )
+    parser.add_argument(
+        "--file", "-f", type=str, default="", help="Use a single file."
+    )
+
+
 
 def parse():
     parser = ArgumentParser()
