@@ -14,59 +14,58 @@ simple_translate,ma darim,nous avons
 simple_translate,shoma darid,vous avez  
 simple_translate,anha darand,ils/elles ont
 
-simple_translate,man mikham,je veux  
-simple_translate,to mikhai,tu veux  
-simple_translate,u mikhad,il/elle veut  
-simple_translate,ma mikhaim,nous voulons  
-simple_translate,shoma mikhaid,vous voulez  
-simple_translate,anha mikhand,ils/elles veulent
+simple_translate,man mikhaham,je veux  
+simple_translate,to mikhahi,tu veux  
+simple_translate,u mikhahad,il/elle veut  
+simple_translate,ma mikhahim,nous voulons  
+simple_translate,shoma mikhahid,vous voulez  
+simple_translate,anha mikhahand,ils/elles veulent
 
 # Phrases
 
 simple_translate,man khobam to chetori ?,je vais bien et toi ?  
 simple_translate,aya baradar dari ?,as-tu un frère ?  
 simple_translate,in che kasi ast ?,qui est cette personne ?  
-simple_translate,emruz koja i ?,où es-tu aujourd’hui ?  
+simple_translate,emruz koja hasti ?,où es-tu aujourd’hui ?  
 simple_translate,man dar sakhtemane shomareye hasht zendegi mikonam,je vis dans l’immeuble numéro huit  
 simple_translate,an dokhtar dar otaghe shomareye sizdah zendegi mikonad,cette fille vit dans la chambre numéro treize  
-simple_translate,ghad e man sado panjâ o hasht santimetr ast,ma taille est de cent cinquante-huit centimètres  
+simple_translate,ghad e man sado panjah o hasht santimetr ast,ma taille est de cent cinquante-huit centimètres  
 simple_translate,ghad e an zan sado hastad santimetr ast,la taille de cette femme est de cent quatre-vingts centimètres  
 simple_translate,man madaram ra dust daram,j’aime ma mère  
 simple_translate,man dustan e madaram ra dust daram,j’aime les amis de ma mère  
-simple_translate,khale hayam man ra gheyli ghezavat mikonand,mes tantes me jugent beaucoup  
+simple_translate,khale hayam man ra kheyli ghezavat mikonand,mes tantes me jugent beaucoup  
 simple_translate,man in kar e anha ra dust nadaram,je n’aime pas leur comportement  
-simple_translate,madaram az dast e man narahat mishavad,ma mère est fâchée contre moi  
-simple_translate,aya bastani mikha hi ?,veux-tu une glace ?  
+simple_translate,madaram az man narahat mishavad,ma mère est fâchée contre moi  //My mother gets upset with me
+simple_translate,aya bastani mikhahi ?,veux-tu une glace ?  
 simple_translate,man zendegi mikonam,je vis  
 simple_translate,to zendegi mikoni,tu vis  
 simple_translate,u zendegi mikonad,il vit  
 simple_translate,ma zendegi mikonim,nous vivons  
 simple_translate,shoma zendegi mikonid,vous vivez  
 simple_translate,anha zendegi mikonand,ils vivent
-simple_translate,yek pesar e man daram,j’ai un frère  
-simple_translate,yek khahar e man daram,j’ai une sœur 
+simple_translate,man yek pesar daram,j’ai un frère  
+simple_translate,man yek khahar daram,j’ai une sœur 
 simple_translate,in yek zan ast,c’est une femme  
 simple_translate,in yek mard ast,c’est un homme  
 simple_translate,man yek dust daram,j’ai un ami  
-simple_translate,man dustan e madaram ra dust daram,j’aime les amis de ma mère  
 simple_translate,in yek otagh ast,c’est une chambre  
 simple_translate,man dar yek sakhteman zendegi mikonam,je vis dans un immeuble  
-simple_translate,yek madar e man daram,j’ai une mère  
-simple_translate,yek pedar e man daram,j’ai un père  
-simple_translate,yek khale e man daram,j’ai une tante  
-simple_translate,yek amou e man daram,j’ai un oncle  
+simple_translate,man yek madar daram,j’ai une mère  
+simple_translate,man yek pedar daram,j’ai un père  
+simple_translate,man yek khale daram,j’ai une tante  
+simple_translate,man yek amou daram,j’ai un oncle  
 simple_translate,in yek santimetr ast,c’est un centimètre  
-simple_translate,ghad e man sado panjâ o hasht santimetr ast,ma taille est de cent cinquante-huit centimètres  
+simple_translate,ghad e man sado panjah o hasht santimetr ast,ma taille est de cent cinquante-huit centimètres  
 simple_translate,ghad e an zan sado hastad santimetr ast,sa taille est de cent quatre-vingts centimètres  
 simple_translate,in yek dahan ast,c’est une bouche  
 simple_translate,man yek dastan daram,j’ai une histoire  
 simple_translate,in yek vazn ast,c’est un poids  
-simple_translate,man bastani mikham,je veux une glace  
+simple_translate,man bastani mikhaham,je veux une glace  
 simple_translate,an dokhtar dar otaghe shomareye sizdah ast,cette fille est dans la chambre numéro treize
 
 # Vocabulaire
 
-simple_translate,yek pesar,un frère  
+simple_translate,yek pesar,un garçon 
 simple_translate,yek khahar,une sœur  
 simple_translate,yek baradar,un frère  
 simple_translate,yek madar,une mère  
@@ -86,7 +85,7 @@ simple_translate,yek sakhteman,un immeuble
 simple_translate,yek zendegi,une vie  
 simple_translate,yek santimetr,un centimètre  
 simple_translate,yek ghad,une taille  
-simple_translate,yek boland,grand/haut  
+simple_translate,boland,grand/haut
 simple_translate,yek dahan,une bouche  
 simple_translate,yek dast,une main  
 simple_translate,yek vazn,un poids  
