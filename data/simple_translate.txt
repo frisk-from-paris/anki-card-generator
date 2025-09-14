@@ -1,117 +1,116 @@
 # Conjugaison
 
-man hastam,je suis  
-to hasti,tu es  
-u hast,il/elle est  
-ma hastim,nous sommes  
-shoma hastid,vous êtes  
-anha hastand,ils/elles sont
+simple_translate,man hastam,je suis  
+simple_translate,to hasti,tu es  
+simple_translate,u hast,il/elle est  
+simple_translate,ma hastim,nous sommes  
+simple_translate,shoma hastid,vous êtes  
+simple_translate,anha hastand,ils/elles sont
 
-man daram,j'ai  
-to dari,tu as  
-u darad,il/elle a  
-ma darim,nous avons  
-shoma darid,vous avez  
-anha darand,ils/elles ont
+simple_translate,man daram,j'ai  
+simple_translate,to dari,tu as  
+simple_translate,u darad,il/elle a  
+simple_translate,ma darim,nous avons  
+simple_translate,shoma darid,vous avez  
+simple_translate,anha darand,ils/elles ont
 
-man mikham,je veux  
-to mikhai,tu veux  
-u mikhad,il/elle veut  
-ma mikhaim,nous voulons  
-shoma mikhaid,vous voulez  
-anha mikhand,ils/elles veulent
+simple_translate,man mikham,je veux  
+simple_translate,to mikhai,tu veux  
+simple_translate,u mikhad,il/elle veut  
+simple_translate,ma mikhaim,nous voulons  
+simple_translate,shoma mikhaid,vous voulez  
+simple_translate,anha mikhand,ils/elles veulent
 
 # Phrases
 
-man khobam to chetori ?,je vais bien et toi ?  
-aya baradar dari ?,as-tu un frère ?  
-in che kasi ast ?,qui est cette personne ?  
-emruz koja i ?,où es-tu aujourd’hui ?  
-man dar sakhtemane shomareye hasht zendegi mikonam,je vis dans l’immeuble numéro huit  
-an dokhtar dar otaghe shomareye sizdah zendegi mikonad,cette fille vit dans la chambre numéro treize  
-ghad e man sado panjâ o hasht santimetr ast,ma taille est de cent cinquante-huit centimètres  
-ghad e an zan sado hastad santimetr ast,la taille de cette femme est de cent quatre-vingts centimètres  
-man madaram ra dust daram,j’aime ma mère  
-man dustan e madaram ra dust daram,j’aime les amis de ma mère  
-khale hayam man ra gheyli ghezavat mikonand,mes tantes me jugent beaucoup  
-man in kar e anha ra dust nadaram,je n’aime pas leur comportement  
-madaram az dast e man narahat mishavad,ma mère est fâchée contre moi  
-aya bastani mikha hi ?,veux-tu une glace ?  
-man zendegi mikonam,je vis  
-to zendegi mikoni,tu vis  
-u zendegi mikonad,il vit  
-ma zendegi mikonim,nous vivons  
-shoma zendegi mikonid,vous vivez  
-anha zendegi mikonand,ils vivent
-yek pesar e man daram,j’ai un frère  
-yek khahar e man daram,j’ai une sœur 
-in yek zan ast,c’est une femme  
-in yek mard ast,c’est un homme  
-man yek dust daram,j’ai un ami  
-man dustan e madaram ra dust daram,j’aime les amis de ma mère  
-in yek otagh ast,c’est une chambre  
-man dar yek sakhteman zendegi mikonam,je vis dans un immeuble  
-yek madar e man daram,j’ai une mère  
-yek pedar e man daram,j’ai un père  
-yek khale e man daram,j’ai une tante  
-yek amou e man daram,j’ai un oncle  
-in yek santimetr ast,c’est un centimètre  
-ghad e man sado panjâ o hasht santimetr ast,ma taille est de cent cinquante-huit centimètres  
-ghad e an zan sado hastad santimetr ast,sa taille est de cent quatre-vingts centimètres  
-in yek dahan ast,c’est une bouche  
-man yek dastan daram,j’ai une histoire  
-in yek vazn ast,c’est un poids  
-man bastani mikham,je veux une glace  
-an dokhtar dar otaghe shomareye sizdah ast,cette fille est dans la chambre numéro treize
+simple_translate,man khobam to chetori ?,je vais bien et toi ?  
+simple_translate,aya baradar dari ?,as-tu un frère ?  
+simple_translate,in che kasi ast ?,qui est cette personne ?  
+simple_translate,emruz koja i ?,où es-tu aujourd’hui ?  
+simple_translate,man dar sakhtemane shomareye hasht zendegi mikonam,je vis dans l’immeuble numéro huit  
+simple_translate,an dokhtar dar otaghe shomareye sizdah zendegi mikonad,cette fille vit dans la chambre numéro treize  
+simple_translate,ghad e man sado panjâ o hasht santimetr ast,ma taille est de cent cinquante-huit centimètres  
+simple_translate,ghad e an zan sado hastad santimetr ast,la taille de cette femme est de cent quatre-vingts centimètres  
+simple_translate,man madaram ra dust daram,j’aime ma mère  
+simple_translate,man dustan e madaram ra dust daram,j’aime les amis de ma mère  
+simple_translate,khale hayam man ra gheyli ghezavat mikonand,mes tantes me jugent beaucoup  
+simple_translate,man in kar e anha ra dust nadaram,je n’aime pas leur comportement  
+simple_translate,madaram az dast e man narahat mishavad,ma mère est fâchée contre moi  
+simple_translate,aya bastani mikha hi ?,veux-tu une glace ?  
+simple_translate,man zendegi mikonam,je vis  
+simple_translate,to zendegi mikoni,tu vis  
+simple_translate,u zendegi mikonad,il vit  
+simple_translate,ma zendegi mikonim,nous vivons  
+simple_translate,shoma zendegi mikonid,vous vivez  
+simple_translate,anha zendegi mikonand,ils vivent
+simple_translate,yek pesar e man daram,j’ai un frère  
+simple_translate,yek khahar e man daram,j’ai une sœur 
+simple_translate,in yek zan ast,c’est une femme  
+simple_translate,in yek mard ast,c’est un homme  
+simple_translate,man yek dust daram,j’ai un ami  
+simple_translate,man dustan e madaram ra dust daram,j’aime les amis de ma mère  
+simple_translate,in yek otagh ast,c’est une chambre  
+simple_translate,man dar yek sakhteman zendegi mikonam,je vis dans un immeuble  
+simple_translate,yek madar e man daram,j’ai une mère  
+simple_translate,yek pedar e man daram,j’ai un père  
+simple_translate,yek khale e man daram,j’ai une tante  
+simple_translate,yek amou e man daram,j’ai un oncle  
+simple_translate,in yek santimetr ast,c’est un centimètre  
+simple_translate,ghad e man sado panjâ o hasht santimetr ast,ma taille est de cent cinquante-huit centimètres  
+simple_translate,ghad e an zan sado hastad santimetr ast,sa taille est de cent quatre-vingts centimètres  
+simple_translate,in yek dahan ast,c’est une bouche  
+simple_translate,man yek dastan daram,j’ai une histoire  
+simple_translate,in yek vazn ast,c’est un poids  
+simple_translate,man bastani mikham,je veux une glace  
+simple_translate,an dokhtar dar otaghe shomareye sizdah ast,cette fille est dans la chambre numéro treize
 
 # Vocabulaire
 
-yek pesar,un frère  
-yek khahar,une sœur  
-yek baradar,un frère  
-yek madar,une mère  
-yek pedar,un père  
-yek khale,une tante  
-yek amou,un oncle  
-yek zan,une femme  
-yek mard,un homme  
-yek dust,un ami  
-dustan,des amis
-in dokhtar,cette fille  
-in mard,cet homme  
-in zan,cette femme  
-in dust,cet ami  
-yek otagh,une chambre  
-yek sakhteman,un immeuble  
-yek zendegi,une vie  
-yek santimetr,un centimètre  
-yek ghad,une taille  
-yek boland,grand/haut  
-yek dahan,une bouche  
-yek dast,une main  
-yek vazn,un poids  
-yek bastani,une glace  
-yek shomare,un numéro
-
+simple_translate,yek pesar,un frère  
+simple_translate,yek khahar,une sœur  
+simple_translate,yek baradar,un frère  
+simple_translate,yek madar,une mère  
+simple_translate,yek pedar,un père  
+simple_translate,yek khale,une tante  
+simple_translate,yek amou,un oncle  
+simple_translate,yek zan,une femme  
+simple_translate,yek mard,un homme  
+simple_translate,yek dust,un ami  
+simple_translate,dustan,des amis
+simple_translate,in dokhtar,cette fille  
+simple_translate,in mard,cet homme  
+simple_translate,in zan,cette femme  
+simple_translate,in dust,cet ami  
+simple_translate,yek otagh,une chambre  
+simple_translate,yek sakhteman,un immeuble  
+simple_translate,yek zendegi,une vie  
+simple_translate,yek santimetr,un centimètre  
+simple_translate,yek ghad,une taille  
+simple_translate,yek boland,grand/haut  
+simple_translate,yek dahan,une bouche  
+simple_translate,yek dast,une main  
+simple_translate,yek vazn,un poids  
+simple_translate,yek bastani,une glace  
+simple_translate,yek shomare,un numéro
 
 # Nombre
 
-yek,1  
-do,2  
-se,3  
-chahar,4  
-panj,5  
-shesh,6  
-haft,7  
-hasht,8  
-noh,9  
-dah,10  
-bist,20  
-si,30  
-chehel,40  
-panjah,50  
-shast,60  
-haftad,70  
-hashtad,80  
-navad,90  
-sad,100
+simple_translate,yek,1  
+simple_translate,do,2  
+simple_translate,se,3  
+simple_translate,chahar,4  
+simple_translate,panj,5  
+simple_translate,shesh,6  
+simple_translate,haft,7  
+simple_translate,hasht,8  
+simple_translate,noh,9  
+simple_translate,dah,10  
+simple_translate,bist,20  
+simple_translate,si,30  
+simple_translate,chehel,40  
+simple_translate,panjah,50  
+simple_translate,shast,60  
+simple_translate,haftad,70  
+simple_translate,hashtad,80  
+simple_translate,navad,90  
+simple_translate,sad,100
