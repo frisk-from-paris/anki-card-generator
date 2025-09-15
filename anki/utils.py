@@ -31,7 +31,7 @@ def create_notes(notes: list[dict]):
                 note_np = SimpleNamespace(**note)
                 results.append(ToFillNote(
                     note_np.sentence,
-                    note_np.words_to_fill,
+                    note_np.words_to_hide,
                     note_np.explanation
                     )
                 )
@@ -49,7 +49,7 @@ def export(
 	    notes: list[genanki.Note],
 	    output_dir: str = "output"
 	) -> None:
-    """Export a deck of notes. """
+    """ Export a deck of notes. """
     deck_id = random.randint(10**9, 10**10)
     deck = genanki.Deck(
         deck_id,
@@ -57,6 +57,6 @@ def export(
     )
     for note in notes:
         deck.add_note(note)
-    print("writing deck ...")
+    print(f"Writing deck {deck_name}...")
     genanki.Package(deck).write_to_file(os.path.join(output_dir, deck_name + ".apkg"))
-    print("deck written.")
+    print(f"Deck {deck_name} written.")

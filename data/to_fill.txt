@@ -1,2 +1,0 @@
-to_fill,man dostet daram,le sujet est au début de la phrase,man
-to_fill,to pishi e man hasti,ajout de 'e' pour signifier un possessif,man
