@@ -13,18 +13,21 @@ In one file you can have multiple types of notes, which are the following
 A SimpleTranslate card is one that only expects a sentence and its translation.
 It interprets a text file as following:
 
-``` file.txt
-simple_translate,my sentence,my translation
-simple_translate,my second sentence,my second translation
+``` file.csv
+type,sentence,translation,explanation,words_to_hide
+simple_translate,my sentence,my translation,,
+simple_translate,my second sentence,my second translation,,
 ```
 
 ### To Fill
 
 A ToFill card is one that expects the user to fill a sentence with missing words.
+In csv the separator for the words_to_hide is ';'.
 It interprets a text file as following:
 
-``` file.txt
-to_fill,this is a sentence,this is the explanation,a,this
+``` file.csv
+type,sentence,translation,explanation,words_to_hide
+to_fill,this is a sentence,,this is the explanation,a;this
 ```
 
 Here, you have the full sentence, followed by the explanation on why the missing word(s) is this,
