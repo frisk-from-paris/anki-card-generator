@@ -115,7 +115,8 @@ def load_csv(fn: str, data: dict):
             reader = csv.DictReader(f)
             for row in reader:
                 # words_to_hide is a imbricated list with ';' separator.
-                row["words_to_hide"] = row["words_to_hide"].split(";") if "words_to_hide" in row else None
+                if "words_to_hide" in row and row.get("words_to_hide"):
+                   row["words_to_hide"] = row["words_to_hide"].split(";") 
                 csv_data.append(row)
     except Exception as e:
         raise e

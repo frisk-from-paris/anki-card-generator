@@ -1,8 +1,24 @@
 import genanki
 
 
+templates = [
+    {
+        'name': 'French',
+        'qfmt': '<p>{{Rule}}: </p><p>{{Farsi}}<br>{{type:French}}</p>',
+        'afmt': '<p>{{FrontSide}}</p><p><hr>{{French}}</p>',
+    },
+    {
+        'name': 'Farsi',
+        'qfmt': '<p>{{Rule}}: </p><p>{{French}}<br>{{type:Farsi}}</p>',
+        'afmt': '<p>{{FrontSide}}</p><p><hr>{{Farsi}}</p>',
+    },
+
+]
+
+
 class SimpleTranslateModel(genanki.Model):
-    def __init__(self):
+    def __init__(self, templates: list[dict]):
+        self._templates = templates
         super().__init__(
             1305534440,
             'Basic (type in the answer)',
@@ -20,33 +36,27 @@ class SimpleTranslateModel(genanki.Model):
                 'font': 'Arial',
                 },
             ],
-            templates=[
-                {
-                'name': 'French',
-                'qfmt': '<p>{{Rule}}: </p><p>{{Farsi}}<br>{{type:French}}</p>',
-                'afmt': '<p>{{FrontSide}}</p><p><hr>{{French}}</p>',
-                },
-                {
-                'name': 'Persian',
-                'qfmt': '<p>{{Rule}}: </p><p>{{French}}<br>{{type:Farsi}}</p>',
-                'afmt': '<p>{{FrontSide}}</p><p><hr>{{Farsi}}</p>',
-                },
-
-            ]
+            templates=templates
         )
 
 
 class SimpleTranslateNote:
-    rule: str = "Traduire la phrase"
+    rule: str = "Translate the sentence"
     farsi: str = ""
     french: str = ""
 
-    def __new__(cls, farsi: str, french: str):
+    def __new__(cls, farsi: str, french: str, translate_to: str):
         cls.farsi = farsi
         cls.french = french
+        template_to_use = []
+
+        for t in templates:
+            if t["name"].casefold() == translate_to.casefold():
+                template_to_use.append(t)
+                break
 
         return genanki.Note(
-            model = SimpleTranslateModel(),
+            model = SimpleTranslateModel(templates=template_to_use),
             fields = [
                 cls.rule,
                 cls.farsi,

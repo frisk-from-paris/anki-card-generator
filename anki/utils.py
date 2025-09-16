@@ -10,14 +10,9 @@ def create_notes(all_notes: dict, translate_to: str):
     """ create multiple notes """
     results = []
     for type_, notes in all_notes.items():
-        print(type_)
         if type_ == "simple_translate":
             for note in notes:
-                new_note = SimpleTranslateNote(note["farsi"], note["french"])
-                if translate_to == "french":
-                    new_note.model.templates.pop(1)
-                elif translate_to == "farsi":
-                    new_note.model.templates.pop(0)
+                new_note = SimpleTranslateNote(note["farsi"], note["french"], translate_to)
                 results.append(new_note)
         else:
             #raise NotImplementedError(f"Type {type_} does not exist")
