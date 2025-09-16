@@ -2,45 +2,26 @@ import genanki
 
 import os
 import random
-from types import SimpleNamespace
 
-from .to_fill import ToFillNote
 from .simple_translate import SimpleTranslateNote
 
 
-def create_note(type_: str, note: dict):
-    """ Create a note object from a note schema. """
-    note_np = SimpleNamespace(**note)
-    if type_ == "to_fill":
-        return ToFillNote(
-            note_np.sentence,
-            note_np.explanation,
-            note_np.words_to_fill
-        )
-    elif type_ == "simple_translate":
-        return SimpleTranslateNote(note_np.sentence, note_np.translation)
-    else:
-        raise NotImplementedError("Type does not exist")
-
-def create_notes(notes: list[dict]):
+def create_notes(all_notes: dict, translate_to: str):
     """ create multiple notes """
     results = []
-    for type_, notes in notes.items():
-        if type_ == "to_fill":
+    for type_, notes in all_notes.items():
+        print(type_)
+        if type_ == "simple_translate":
             for note in notes:
-                note_np = SimpleNamespace(**note)
-                results.append(ToFillNote(
-                    note_np.sentence,
-                    note_np.words_to_hide,
-                    note_np.explanation
-                    )
-                )
-        elif type_ == "simple_translate":
-            for note in notes:
-                note_np = SimpleNamespace(**note)
-                results.append(SimpleTranslateNote(note_np.sentence, note_np.translation))
+                new_note = SimpleTranslateNote(note["farsi"], note["french"])
+                if translate_to == "french":
+                    new_note.model.templates.pop(1)
+                elif translate_to == "farsi":
+                    new_note.model.templates.pop(0)
+                results.append(new_note)
         else:
-            raise NotImplementedError("Type does not exist")
+            #raise NotImplementedError(f"Type {type_} does not exist")
+            print(f"Type {type_} does not exist")
     return results
 
 
@@ -55,8 +36,10 @@ def export(
         deck_id,
         deck_name
     )
+
     for note in notes:
         deck.add_note(note)
+
     print(f"Writing deck {deck_name}...")
     genanki.Package(deck).write_to_file(os.path.join(output_dir, deck_name + ".apkg"))
     print(f"Deck {deck_name} written.")

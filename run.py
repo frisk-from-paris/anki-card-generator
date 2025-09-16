@@ -10,8 +10,8 @@ def main():
         data = loader.load_notes(args.file)
     else:
         data = loader.load_notes(args.directory)
-    all_notes = utils.create_notes(data)
 
+    all_notes = utils.create_notes(data, args.translate_to)
     utils.export(args.name, all_notes, args.output)
 
 

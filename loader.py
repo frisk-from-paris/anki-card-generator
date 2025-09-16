@@ -31,7 +31,6 @@ import os
 import csv
 import json
 import yaml
-from collections import defaultdict
 
 
 ALLOWED_EXTENSIONS = ["json", "yaml", "txt", "csv"]
