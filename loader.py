@@ -91,11 +91,10 @@ def load_json(fn: str, data: dict):
             objs = json.load(f)
     except json.JSONDecodeError as e:
         raise e
-    if not isinstance(obj, list):
+    if not isinstance(objs, list):
         raise Exception("Json object should be a list.")
     for obj in objs:
         data = make_new_note(obj, data)
-    return data
 
 
 def load_yaml(fn: str, data: dict):
@@ -104,11 +103,10 @@ def load_yaml(fn: str, data: dict):
             objs = yaml.safe_load(f)
     except yaml.YAMLError as e:
         raise e
-    if not isinstance(obj, dict):
+    if not isinstance(objs, list):
         raise Exception(f"{fn} is not a valid yaml file.")
     for obj in objs:
         data = make_new_note(obj, data)
-    return data
 
 
 def load_csv(fn: str, data: dict):
@@ -117,7 +115,8 @@ def load_csv(fn: str, data: dict):
         with open(fn, "r") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                row["words_to_hide"] = row["words_to_hide"].split(";")
+                # words_to_hide is a imbricated list with ';' separator.
+                row["words_to_hide"] = row["words_to_hide"].split(";") if "words_to_hide" in row else None
                 csv_data.append(row)
     except Exception as e:
         raise e
@@ -137,4 +136,4 @@ def load_notes(folder: str):
         load_json(f, data)
     for f in valid_files["csv"]:
         load_csv(f, data)
-return data
+    return data
