@@ -17,8 +17,8 @@ current schema :
     [
         {
             "type": "",
-            "sentence": "",
-            "translation": "",
+            "farsi": "",
+            "french": "",
             "explanation": "",
             "words_to_hide": ["",""],
         },
@@ -73,11 +73,11 @@ def make_new_note(obj: dict, data: dict):
     """
     new_note = {}
     if obj["type"] == "simple_translate":
-        new_note["sentence"] = obj["sentence"]
-        new_note["translation"] = obj["translation"]
+        new_note["farsi"] = obj["farsi"]
+        new_note["french"] = obj["french"]
         data["simple_translate"].append(new_note)
     elif obj["type"] == "to_fill":
-        new_note["sentence"] = obj["sentence"]
+        new_note["farsi"] = obj["farsi"]
         new_note["explanation"] = obj["explanation"]
         new_note["words_to_hide"] = obj["words_to_hide"]
         data["to_fill"].append(new_note)

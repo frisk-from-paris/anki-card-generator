@@ -12,38 +12,44 @@ class SimpleTranslateModel(genanki.Model):
                 'font': 'Arial',
                 },
                 {
-                'name': 'Sentence',
+                'name': 'Farsi',
                 'font': 'Arial',
                 },
                 {
-                'name': 'Translation',
+                'name': 'French',
                 'font': 'Arial',
                 },
             ],
             templates=[
                 {
-                'name': 'To Persian',
-                'qfmt': '<p>{{Rule}}: </p><p>{{Sentence}}<br>{{type:Translation}}</p>',
-                'afmt': '<p>{{FrontSide}}</p><p><hr>{{Translation}}</p>',
+                'name': 'French',
+                'qfmt': '<p>{{Rule}}: </p><p>{{Farsi}}<br>{{type:French}}</p>',
+                'afmt': '<p>{{FrontSide}}</p><p><hr>{{French}}</p>',
                 },
+                {
+                'name': 'Persian',
+                'qfmt': '<p>{{Rule}}: </p><p>{{French}}<br>{{type:Farsi}}</p>',
+                'afmt': '<p>{{FrontSide}}</p><p><hr>{{Farsi}}</p>',
+                },
+
             ]
         )
 
 
 class SimpleTranslateNote:
     rule: str = "Traduire la phrase"
-    sentence: str = ""
-    translation: str = ""
+    farsi: str = ""
+    french: str = ""
 
-    def __new__(cls, sentence: str, translation: str):
-        cls.sentence = sentence
-        cls.translation = translation
+    def __new__(cls, farsi: str, french: str):
+        cls.farsi = farsi
+        cls.french = french
 
         return genanki.Note(
             model = SimpleTranslateModel(),
             fields = [
                 cls.rule,
-                cls.sentence,
-                cls.translation
+                cls.farsi,
+                cls.french
             ]
         )
