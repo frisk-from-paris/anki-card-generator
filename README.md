@@ -2,11 +2,13 @@
 
 ## Description
 
-This project aims at easily converting data files to a deck of Anki cards.
+This project is meant to turn an excel sheet or any data format to anki notes.
 
-## Types of cards
+## Types of notes
 
-In one file you can have multiple types of notes, which are the following
+The code is built to be able to support multiple types of notes in the future.
+For now, we support 'simple_translate' notes, which are cards with a sentence in french
+and farsi. You can chose which cards you want generated (either french to persian or vice versa.)
 
 ### Simple Translate
 
@@ -30,14 +32,38 @@ type,sentence,translation,explanation,words_to_hide
 to_fill,this is a sentence,,this is the explanation,a;this
 ```
 
-Here, you have the full sentence, followed by the explanation on why the missing word(s) is this,
-then as many missing as you need in the end.
-
+** THIS TYPE IS CURRENTLY (17/09/2025) DEPRECATED. **
 
 ## Install and run
 
-python run.py --directroy 'folder where data is present' --output 'output folder' --name 'deck name'
+### Installation
 
-## Compatible files
+Clone the repository, create a virtual environment and run :
 
-For now it's working with special text files but it will soon accept multiple types of files.
+```bash
+pip install -r requirements.txt
+```
+
+### Run
+
+usage: run.py [-h] [--directory DIRECTORY] [--name NAME] [--output OUTPUT] [--file FILE] --translate-to TRANSLATE_TO
+
+options:
+  -h, --help            show this help message and exit
+  --directory, -d DIRECTORY
+                        A folder with the cards to create.
+  --name, -n NAME       The name of the deck.
+  --output, -o OUTPUT   The path where to create the deck.
+  --file, -f FILE       Use a single file.
+  --translate-to, -t TRANSLATE_TO
+                        Which way should the translation go (persian or french).
+
+### Example
+
+To generate notes from the file 'test.csv' and export a deck named 'pishi-deck' to a folder named 'output' which translate_to french:
+
+```bash
+python run.py -f test.csv -o output -n pishi-deck -t french
+```
+
+A pishi-deck.apkg is now inside your output folder, and you can import it in your anki app.
