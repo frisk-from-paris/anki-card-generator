@@ -4,13 +4,13 @@ import genanki
 templates = [
     {
         'name': 'French',
-        'qfmt': '<p>{{Rule}}: </p><p>{{Farsi}}<br>{{type:French}}</p>',
+        'qfmt': '<p>{{Rule}}: </p><p>{{Farsi}} {{Symbols}}<br>{{type:French}}</p>',
         'afmt': '<p>{{FrontSide}}</p><p><hr>{{French}}</p>',
     },
     {
         'name': 'Farsi',
         'qfmt': '<p>{{Rule}}: </p><p>{{French}}<br>{{type:Farsi}}</p>',
-        'afmt': '<p>{{FrontSide}}</p><p><hr>{{Farsi}}</p>',
+        'afmt': '<p>{{FrontSide}}</p><p><hr>{{Farsi}} {{Symbols}}</p>',
     },
 
 ]
@@ -35,6 +35,10 @@ class SimpleTranslateModel(genanki.Model):
                 'name': 'French',
                 'font': 'Arial',
                 },
+                {
+                'name': 'Symbols',
+                'font': 'Arial',
+                },
             ],
             templates=templates
         )
@@ -42,12 +46,14 @@ class SimpleTranslateModel(genanki.Model):
 
 class SimpleTranslateNote:
     rule: str = "Translate the sentence"
-    farsi: str = ""
-    french: str = ""
+    symbols: str = ""
+    farsi: str
+    french: str
 
-    def __new__(cls, farsi: str, french: str, translate_to: str):
+    def __new__(cls, farsi: str, french: str, translate_to: str, symbols: str = ""):
         cls.farsi = farsi
         cls.french = french
+        cls.symbols = symbols
         template_to_use = []
 
         for t in templates:
@@ -60,6 +66,7 @@ class SimpleTranslateNote:
             fields = [
                 cls.rule,
                 cls.farsi,
-                cls.french
+                cls.french,
+                cls.symbols
             ]
         )

@@ -12,7 +12,7 @@ def create_notes(all_notes: dict, translate_to: str):
     for type_, notes in all_notes.items():
         if type_ == "simple_translate":
             for note in notes:
-                new_note = SimpleTranslateNote(note["farsi"], note["french"], translate_to)
+                new_note = SimpleTranslateNote(note["farsi"], note["french"], translate_to, note.get("symbols", ""))
                 results.append(new_note)
         else:
             #raise NotImplementedError(f"Type {type_} does not exist")

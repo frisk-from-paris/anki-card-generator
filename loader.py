@@ -19,6 +19,7 @@ current schema :
             "type": "",
             "farsi": "",
             "french": "",
+            "symbols": "",
             "explanation": "",
             "words_to_hide": ["",""],
         },
@@ -70,16 +71,10 @@ def make_new_note(obj: dict, data: dict):
         obj (dict): the dict representation of a anki note.
         data (dict): the current loaded data.
     """
-    new_note = {}
     if obj["type"] == "simple_translate":
-        new_note["farsi"] = obj["farsi"]
-        new_note["french"] = obj["french"]
-        data["simple_translate"].append(new_note)
+        data["simple_translate"].append(obj)
     elif obj["type"] == "to_fill":
-        new_note["farsi"] = obj["farsi"]
-        new_note["explanation"] = obj["explanation"]
-        new_note["words_to_hide"] = obj["words_to_hide"]
-        data["to_fill"].append(new_note)
+        data["to_fill"].append(obj)
     return data
 
 
