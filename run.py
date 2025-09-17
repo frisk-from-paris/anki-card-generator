@@ -1,6 +1,7 @@
 import cli
 import loader
-from anki import utils
+from anki.exports import export
+from anki.builder import create_notes
 
 
 def main():
@@ -11,8 +12,8 @@ def main():
     else:
         data = loader.load_notes(args.directory)
 
-    all_notes = utils.create_notes(data, args.translate_to)
-    utils.export(args.name, all_notes, args.output)
+    all_notes = create_notes(data, args.translate_to)
+    export(args.name, all_notes, args.output)
 
 
 if __name__ == "__main__":
