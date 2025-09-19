@@ -73,8 +73,8 @@ def make_new_note(obj: dict, data: dict):
     """
     if obj["type"] == "simple_translate":
         data["simple_translate"].append(obj)
-    elif obj["type"] == "to_fill":
-        data["to_fill"].append(obj)
+    elif obj["type"] == "conjugate":
+        data["conjugate"].append(obj)
     return data
 
 
@@ -125,7 +125,7 @@ def load_notes(folder: str):
     # This 'data' dict is edited on the fly so it's thread unsafe.
     data = {
         "simple_translate": [],
-        "to_fill": []
+        "conjugate": []
     }
     for f in valid_files["json"]:
         load_json(f, data)

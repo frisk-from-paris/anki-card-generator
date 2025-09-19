@@ -13,6 +13,7 @@ def main():
         data = loader.load_notes(args.directory)
 
     all_notes = create_notes(data, args.translate_to)
+    print(all_notes)
     export(args.name, all_notes, args.output)
 
 
