@@ -11,8 +11,6 @@ def main():
     data = loader.load_notes(source_path)
     all_notes = create_notes(data, args.translate_to)
 
-    print(all_notes)
-
     # run the deck export
     export(args.name, all_notes, args.output)
 
