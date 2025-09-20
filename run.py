@@ -6,14 +6,14 @@ from anki.builder import create_notes
 
 def main():
     args = cli.parse()
+    source_path = args.file if args.file else args.directory
 
-    if args.file:
-        data = loader.load_notes(args.file)
-    else:
-        data = loader.load_notes(args.directory)
-
+    data = loader.load_notes(source_path)
     all_notes = create_notes(data, args.translate_to)
+
     print(all_notes)
+
+    # run the deck export
     export(args.name, all_notes, args.output)
 
 
