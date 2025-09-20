@@ -10,23 +10,6 @@ So the process should be the following:
       of dicts with key = field, value = its value.
     - This dict is then pass to the same 'factory' method so it builds the corresponding
       object.
-
-current schema :
-
-``` json
-    [
-        {
-            "type": "",
-            "farsi": "",
-            "french": "",
-            "symbols": "",
-            "explanation": "",
-            "words_to_hide": ["",""],
-        },
-        ...
-    ]
-```
-
 """
 import os
 import csv
@@ -35,6 +18,7 @@ import yaml
 
 
 ALLOWED_EXTENSIONS = ["json", "yaml", "txt", "csv"]
+TYPE_REGISTRY = ["simple_translate", "conjugate"]
 
 
 def get_valid_files(folder: str):
@@ -71,10 +55,10 @@ def make_new_note(obj: dict, data: dict):
         obj (dict): the dict representation of a anki note.
         data (dict): the current loaded data.
     """
-    if obj["type"] == "simple_translate":
-        data["simple_translate"].append(obj)
-    elif obj["type"] == "conjugate":
-        data["conjugate"].append(obj)
+    if obj["type"] in TYPE_REGISTRY:
+        data[obj["type"]].append(obj)
+    else:
+        raise Exception(f"This type doesn't exist : {obj['type']}.")
     return data
 
 
@@ -120,15 +104,20 @@ def load_csv(fn: str, data: dict):
 
 
 def load_notes(folder: str):
+    """ Load the data to build the notes.
+    """
     # Load the data in memory
     valid_files = get_valid_files(folder)
-    # This 'data' dict is edited on the fly so it's thread unsafe.
-    data = {
-        "simple_translate": [],
-        "conjugate": []
-    }
+
+    # we init the data dict.
+    data = {}
+    for t in TYPE_REGISTRY:
+        data[t] = []
+
     for f in valid_files["json"]:
         load_json(f, data)
+
     for f in valid_files["csv"]:
         load_csv(f, data)
+
     return data
